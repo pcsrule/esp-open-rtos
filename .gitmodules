@@ -37,3 +37,6 @@
 [submodule "extras/multipwm"]
 	path = extras/multipwm
 	url = https://github.com/nochkin/multipwm
+[submodule "extras/microcoap"]
+	path = extras/microcoap
+	url = git@github.com:pcsrule/microcoap.git

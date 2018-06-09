@@ -306,7 +306,7 @@ bool rboot_verify_image(uint32_t initial_offset, uint32_t *image_length, const c
 
         if(is_new_header) {
             /* pad to a 16 byte offset */
-            offset = (offset+15) & ~15;
+            //offset = (offset+15) & ~15;
 
             /* expect a v1.1 header here at start of "real" sections */
             sdk_spi_flash_read(offset, (uint32_t *)&image_header, sizeof(image_header_t));

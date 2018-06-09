@@ -10,13 +10,13 @@
 
 # Flash size in megabits
 # Valid values are same as for esptool.py - 2,4,8,16,32
-FLASH_SIZE ?= 16
+FLASH_SIZE ?= 32
 
 # Flash mode, valid values are same as for esptool.py - qio,qout,dio.dout
 FLASH_MODE ?= qio
 
 # Flash speed in MHz, valid values are same as for esptool.py - 80, 40, 26, 20
-FLASH_SPEED ?= 40
+FLASH_SPEED ?= 80
 
 # Output directories to store intermediate compiled files
 # relative to the program directory
@@ -38,7 +38,7 @@ ESPTOOL_ARGS=-fs $(FLASH_SIZE)m -fm $(FLASH_MODE) -ff $(FLASH_SPEED)m
 # data RAM
 #
 # NB: Setting the value to 0 requires a recent esptool.py (Feb 2016 / commit ebf02c9)
-PRINTF_SCANF_FLOAT_SUPPORT ?= 1
+PRINTF_SCANF_FLOAT_SUPPORT ?= 0
 
 FLAVOR ?= release # or debug
 
